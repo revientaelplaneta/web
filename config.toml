@@ -1,0 +1,33 @@
+languageCode = "es-es"
+title = "Revienta el planeta"
+baseurl = "https://revientaelplaneta.com"
+theme = "hugo-future-imperfect"
+
+[params]
+    description          = "Revienta el planeta! (aún no lo has hecho?)"
+    # This will appear on the top left of the navigation bar
+    navbarTitle          = "Revienta el planeta!"
+
+[params.intro]
+    header    = "Cabecera"
+    paragraph = "Parrafo"
+    about     = "Sobre revienta el planeta..."
+
+[params.postAmount]
+    sidebar = 2
+
+[[menu.main]]
+    name = "Artículos"
+    url = "/articulos"
+    identifier = "fa fa-articulos-o"
+    weight = 1
+
+[[menu.main]]
+    name = "Categorías"
+    url = "/categorias"
+    weight = 2
+
+[[menu.main]]
+    name = "Sobre nosotros"
+    url = "/sobrenosotros"
+    weight = 3

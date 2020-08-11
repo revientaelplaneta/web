@@ -1,0 +1,18 @@
+---
+
+dist: trusty
+sudo: required
+
+install:
+ - wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
+ - sudo dpkg -i /tmp/hugo.deb
+
+script:
+ - hugo
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
